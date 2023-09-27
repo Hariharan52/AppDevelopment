@@ -1,0 +1,95 @@
+/* Header.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navigation-links {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-links button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navigation-links button:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-toggle button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.center-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 28px;
+  color: darkred;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.user-info p {
+  margin-right: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .navigation-links button {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
